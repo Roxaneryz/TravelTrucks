@@ -16,7 +16,7 @@ const handleRejected = (state, { payload }) => {
 };
 
 export const sliceCampers = createSlice({
-  name: "Campers",
+  name: "campers",
   initialState,
 
   extraReducers: (builder) => {
