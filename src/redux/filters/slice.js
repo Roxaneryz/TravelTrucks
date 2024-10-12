@@ -1,19 +1,41 @@
 import { createSlice } from "@reduxjs/toolkit";
-const initialState = { items: []}
+const initialState = {
+  filterProps: {
+    AC: false,
+  kitchen: false,
+  automatic: false,
+  TV: false,
+  bathroom: false,
+ },
+  location: "",
+ 
+  type: {
+    Van: false,
+    FullyIntegrated: false,
+    Alcove: false
+
+  }
+  
+  
+}
 
 export const sliceFilters = createSlice({
-  name: "Filters",
+  name: "filters",
   initialState,
   reducers: {
-    reducer1(state, {payload: userData}) {},
-    reducer2(state, {payload: userData}) {},
-    reducer3(state, {payload: userData}) {},
-    reducer4: {
-      reducer(state, {payload: userData}) {},
-      prepare(userData) {},
+    setFilter(state, { payload }) {
+      state.filterProps[payload.name] = payload.value;
     },
+
+    setLocation(state, { payload }) {
+      state.location = payload;
+    },
+    setType(state, { payload }) {
+       state.type[payload.name] = payload.value;
+    },
+    
   },
 });
 
-export const { reducer1, reducer2, reducer3 } = sliceFilters.actions;
+export const { setFilter, setLocation, setType} = sliceFilters.actions;
 export default sliceFilters.reducer;
