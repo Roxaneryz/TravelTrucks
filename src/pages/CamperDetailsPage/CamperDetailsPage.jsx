@@ -14,7 +14,7 @@ const CamperDetailsPage = () => {
   return (
     <div>
       <div>
-        <CamperDetails/>
+        {/* <CamperDetails/> */}
       </div>
       <div>
         <div>
