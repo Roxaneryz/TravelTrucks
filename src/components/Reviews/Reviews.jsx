@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchCamperById } from "../../redux/campers/operation";
 import { selectCurrentCamper } from "../../redux/campers/selectors";
 import StarRatings from "react-star-ratings";
-// import { fetchMovieReviews } from "../../movieApi";
+
 
 const Reviews = () => {
    const { camperId } = useParams();
@@ -23,9 +23,9 @@ console.log(camper);
 
 
   return (
-    <div className={css.camperFeatures}>
-      <h3>Features</h3>
-      <ul className={css.featuresList}>
+    <div className={css.camperReview}>
+      <h3>Reviews</h3>
+      <ul className={css.listReview}>
         {camper?.reviews.map((review) => {
           return (
             <li className={css.review} key={review.reviewer_name}>

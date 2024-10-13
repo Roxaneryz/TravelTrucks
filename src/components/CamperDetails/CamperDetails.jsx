@@ -3,7 +3,6 @@ import css from "./CamperDetails.module.css"
 
 
 const CamperDetails = ({ camper }) => {
-
   const formattedPrice = camper.price.toFixed(2);
 
   return (
@@ -13,7 +12,6 @@ const CamperDetails = ({ camper }) => {
         {camper.images.map((image, index) => (
           <li key={index}>
             <img src={image} alt={camper.name} />
-            
           </li>
         ))}
       </ul>
