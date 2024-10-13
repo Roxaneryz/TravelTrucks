@@ -23,9 +23,9 @@ console.log(camper);
 
 
   return (
-    <div className={css.camperReview}>
-      <h3>Reviews</h3>
-      <ul className={css.listReview}>
+    <div className={css.camperFeatures}>
+      <h3>Features</h3>
+      <ul className={css.featuresList}>
         {camper?.reviews.map((review) => {
           return (
             <li className={css.review} key={review.reviewer_name}>
