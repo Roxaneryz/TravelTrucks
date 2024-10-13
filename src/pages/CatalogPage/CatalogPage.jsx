@@ -20,7 +20,7 @@ const CatalogPage = () => {
   }, [dispatch]);
 
 
-  const [visibleCampers, setVisibleCampers] = useState();
+  const [visibleCampers, setVisibleCampers] = useState(4);
 
   if (isLoading) return <Loader />;
   if (error) return <div>Error:{error}</div>;

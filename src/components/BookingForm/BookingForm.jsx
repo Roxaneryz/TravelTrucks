@@ -48,7 +48,7 @@ const BookingForm = ({ onBookingSuccess }) => {
             </div>
 
             <div className={css.formGroup}>
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email"></label>
               <Field
                 type="email"
                 id="email"
@@ -63,7 +63,7 @@ const BookingForm = ({ onBookingSuccess }) => {
             </div>
 
             <div className={css.formGroup}>
-              <label htmlFor="bookingDate">Booking Date</label>
+              <label htmlFor="bookingDate"></label>
               <Field
                 type="date"
                 id="bookingDate"
@@ -78,7 +78,7 @@ const BookingForm = ({ onBookingSuccess }) => {
             </div>
 
             <div className={css.formGroup}>
-              <label htmlFor="comment">Comments</label>
+              <label htmlFor="comment"></label>
               <Field
                 as="textarea"
                 id="comment"

@@ -2,22 +2,22 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   filterProps: {
     AC: false,
-  kitchen: false,
-  automatic: false,
-  TV: false,
-  bathroom: false,
- },
+    kitchen: false,
+    automatic: false,
+    TV: false,
+    bathroom: false,
+    gas: false,
+    radio: false,
+    microwave: false,
+  },
   location: "",
- 
+
   type: {
     Van: false,
     FullyIntegrated: false,
-    Alcove: false
-
-  }
-  
-  
-}
+    Alcove: false,
+  },
+};
 
 export const sliceFilters = createSlice({
   name: "filters",

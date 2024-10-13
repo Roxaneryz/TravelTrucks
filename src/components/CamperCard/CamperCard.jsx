@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import css from "./CamperCard.module.css"
 
 const CamperCard = ({ camper }) => {
-  console.log();
+ 
   
 const formattedPrice = camper.price.toFixed(2);
   
@@ -14,7 +14,7 @@ const formattedPrice = camper.price.toFixed(2);
   return (
     <div className={css.camperCard}>
       <h3>{camper.name}</h3>
-      <img src={camper.image} alt={camper.name} />
+      <img src={camper.gallery} alt={camper.name} />
       <p>Price: {formattedPrice}€</p>
       <p>Rating: {camper.rating}</p>
       <p>Description: {camper.description}</p>
