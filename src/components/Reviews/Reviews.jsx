@@ -24,7 +24,7 @@ console.log(camper);
 
   return (
     <div className={css.camperReview}>
-      <h2>Reviews</h2>
+      <h3>Reviews</h3>
       <ul className={css.listReview}>
         {camper?.reviews.map((review) => {
           return (
@@ -34,7 +34,7 @@ console.log(camper);
                 rating={review.reviewer_rating}
                 starRatedColor="gold"
                 starDimension="20px"
-                starSpacing="15px"
+                starSpacing="2px"
               />
               <p>{review.comment}</p>
             </li>

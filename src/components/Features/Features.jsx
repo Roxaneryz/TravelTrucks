@@ -17,10 +17,26 @@ const Features = () => {
   
   return (
     <div>
-      <h2>Features</h2>
-     
+      <h3>Features</h3>
+      {/* <ul className={css.featuresList}>
+        {camper?.reviews.map((review) => {
+          return (
+            <li className={css.review} key={review.reviewer_name}>
+              <h3>{review.reviewer_name}</h3>
+              <StarRatings
+                rating={review.reviewer_rating}
+                starRatedColor="gold"
+                starDimension="20px"
+                starSpacing="15px"
+              />
+              <p>{review.comment}</p>
+            </li>
+          );
+        })}
+      </ul> */}
     </div>
   );
 };
 
 export default Features;
+
