@@ -14,7 +14,8 @@ import {
 
 const Filter = () => {
   const filterProps = useSelector(selectFilterProps);
-  const type = useSelector(selectType);
+    const type = useSelector(selectType);
+    const location = useSelector(selectLocation);
 
   const dispatch = useDispatch();
 
@@ -33,16 +34,25 @@ const Filter = () => {
   };
 
   const handleChange = (title, filterType="filter") => {
-    const object = {
-      name: title,
-      value: !filterProps[title],
-    };
+    
   
 
   
-    if (filterType === "filter") {
+      if (filterType === "filter") {
+        
+          const object = {
+            name: title,
+            value: !filterProps[title],
+          };
+          
       dispatch(setFilter(object));
-    } else if (filterType === "type") {
+      } else if (filterType === "type") {
+          
+          const object = {
+            name: title,
+            value: !type[title],
+          };
+          
       dispatch(setType(object));
     } else if (filterType === "location") {
       dispatch(setLocation(type));
