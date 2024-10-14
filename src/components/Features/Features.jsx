@@ -20,12 +20,12 @@ const Features = () => {
 
       <h3>Vehicle details</h3>
       <ul className={css.featuresList}>
-        <li className={css.featuresItem}>Form {camper.form}</li>
-        <li className={css.featuresItem}>Length {camper.length}</li>
-        <li className={css.featuresItem}>Width {camper.width}</li>
-        <li className={css.featuresItem}>Height {camper.height}</li>
-        <li className={css.featuresItem}>Tank {camper.tank}</li>
-        <li className={css.featuresItem}>Consumption {camper.consumption}</li>
+        <li className={css.featuresItem}>Form {camper?.form}</li>
+        <li className={css.featuresItem}>Length {camper?.length}</li>
+        <li className={css.featuresItem}>Width {camper?.width}</li>
+        <li className={css.featuresItem}>Height {camper?.height}</li>
+        <li className={css.featuresItem}>Tank {camper?.tank}</li>
+        <li className={css.featuresItem}>Consumption {camper?.consumption}</li>
       </ul>
     </div>
   );
